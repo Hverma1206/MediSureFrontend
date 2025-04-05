@@ -34,33 +34,33 @@ const Signup = () => {
     setIsLoading(true);
 
     try {
-      console.group('Medisure Signup Attempt');
-      console.log('📝 Form Data:', formData);
-      console.log('👤 User Details:', {
-        name: `${formData.firstName} ${formData.lastName}`,
-        professional: {
-          title: formData.title,
-          specialty: formData.specialty,
-          licenseNumber: formData.licenseNumber,
-          npiNumber: formData.npiNumber,
-          state: formData.state
-        },
-        practice: {
-          name: formData.practiceName,
-          type: formData.practiceType,
-          ehr: formData.ehr
-        },
-        account: {
-          email: formData.email,
-          passwordLength: formData.password ? formData.password.length : 0,
-          passwordsMatch: formData.password === formData.confirmPassword
-        },
-        consents: {
-          hipaa: formData.hipaaConsent,
-          terms: formData.termsConsent
-        }
-      });
-      console.groupEnd();
+      // console.group('Medisure Signup Attempt');
+      // console.log('📝 Form Data:', formData);
+      // console.log('👤 User Details:', {
+      //   name: `${formData.firstName} ${formData.lastName}`,
+      //   professional: {
+      //     title: formData.title,
+      //     specialty: formData.specialty,
+      //     licenseNumber: formData.licenseNumber,
+      //     npiNumber: formData.npiNumber,
+      //     state: formData.state
+      //   },
+      //   practice: {
+      //     name: formData.practiceName,
+      //     type: formData.practiceType,
+      //     ehr: formData.ehr
+      //   },
+      //   account: {
+      //     email: formData.email,
+      //     passwordLength: formData.password ? formData.password.length : 0,
+      //     passwordsMatch: formData.password === formData.confirmPassword
+      //   },
+      //   consents: {
+      //     hipaa: formData.hipaaConsent,
+      //     terms: formData.termsConsent
+      //   }
+      // });
+      // console.groupEnd();
 
       if (!formData.firstName || !formData.lastName) {
         setError("First name and last name are required");
