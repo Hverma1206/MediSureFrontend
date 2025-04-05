@@ -1,4 +1,4 @@
-const API_URL = '/api/auth';
+const API_URL = 'http://65.0.122.218/api/auth';
 
 // Session-based user information
 let currentUser = null;
