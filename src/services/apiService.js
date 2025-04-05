@@ -1,6 +1,6 @@
 import { getUserId } from './authService';
 
-const API_URL = 'http://65.0.122.218/api';
+const API_URL = '/api';
 
 export const getMedicalReports = async () => {
   try {

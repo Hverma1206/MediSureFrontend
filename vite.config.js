@@ -10,7 +10,19 @@ export default defineConfig({
     proxy: {
       "/api": {
         target: "http://65.0.122.218/",
+        changeOrigin: true,
+        secure: false,
       },
+      "/predict": {
+        target: "http://52.66.107.103/",
+        changeOrigin: true,
+        secure: false,
+      },
+      "/predict_bone_route": {
+        target: "http://52.66.107.103/",
+        changeOrigin: true,
+        secure: false,
+      }
     },
   },
 })

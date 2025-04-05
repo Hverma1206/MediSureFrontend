@@ -10,7 +10,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { createMedicalReport } from "../services/apiService";
 
-const API_BASE_URL = "http://52.66.107.103";
+const API_BASE_URL = "";  // Empty string for relative URLs
 
 const ScanReports = () => {
   const navigate = useNavigate();
